@@ -1,0 +1,102 @@
+:root {
+  --primary-color: #ffc500;
+  --secondary-color: #eaae00;
+  --third-color: #00c0cc;
+  --third-color-hover: #02acb8;
+  --dark-color: #302f2f;
+  --espacamento: 0px 50px 0px 50px;
+}
+
+/* 
+  - Fonte Roboto. 
+  - Pode utilizar Bootstrap. 
+  - Empregar media-queries para no mínimo a versão mobile. 
+  - Dois arquivos. (Um com a página inicial, o segundo com o formulário (+ header e footer))
+  - 
+*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header{
+  background-color: var(--secondary-color);
+  padding: var(--espacamento);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+  color: var(--third-color-hover);
+}
+
+main{
+  display: flex;
+  padding: var(--espacamento);
+  background-color: var(--primary-color);
+}
+.main-descricao{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  color: white;
+}
+
+.main-descricao .botao1{
+  background-color: var(--third-color);
+  color: white;
+  padding: 12px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.main-descricao .botao2{
+  color: white;
+  padding: 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  border: 2px solid white;
+}
+
+.container-botao {
+  display: flex;
+  gap: 20px;
+}
+
+.main-img{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.secao-cards{
+  background-color: var(--primary-color);
+  padding: var(--espacamento);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
