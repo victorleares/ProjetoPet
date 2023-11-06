@@ -4,99 +4,133 @@
   --third-color: #00c0cc;
   --third-color-hover: #02acb8;
   --dark-color: #302f2f;
-  --espacamento: 0px 50px 0px 50px;
+  --espacamento: 10px 50px 10px 50px;
 }
 
-/* 
-  - Fonte Roboto. 
-  - Pode utilizar Bootstrap. 
-  - Empregar media-queries para no mínimo a versão mobile. 
-  - Dois arquivos. (Um com a página inicial, o segundo com o formulário (+ header e footer))
-  - 
-*/
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-header{
-  background-color: var(--secondary-color);
-  padding: var(--espacamento);
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-}
+  header{
+    background-color: var(--secondary-color);
+    padding: var(--espacamento);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; 
+  }
 
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  align-items: center;
-}
+  nav ul{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;  
+  }
 
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-size: 20px;
-}
+  nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+  }
 
-nav ul li a:hover {
-  text-decoration: underline;
-  color: var(--third-color-hover);
-}
+  nav ul li a:hover{
+    text-decoration: underline;
+    color: var(--third-color-hover);
+  }
 
-main{
-  display: flex;
-  padding: var(--espacamento);
-  background-color: var(--primary-color);
-}
-.main-descricao{
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 20px;
-  color: white;
-}
+  main{
+    background-color: var(--primary-color);
+    display: flex;
+    padding: var(--espacamento);
+  }
 
-.main-descricao .botao1{
-  background-color: var(--third-color);
-  color: white;
-  padding: 12px;
-  border-radius: 8px;
-  text-decoration: none;
-}
+  .main-descricao{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    color: white;
+  }
 
-.main-descricao .botao2{
-  color: white;
-  padding: 12px;
-  border-radius: 8px;
-  text-decoration: none;
-  border: 2px solid white;
-}
+  .main-descricao .botao1{
+    background-color: var(--third-color);
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    text-decoration: none;
+  }
 
-.container-botao {
-  display: flex;
-  gap: 20px;
-}
+  .main-descricao .botao2{
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    border: 2px solid white;
+  } 
 
-.main-img{
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  .container-botao{
+    display: flex;
+    gap: 20px;
+  }
 
-.secao-cards{
-  background-color: var(--primary-color);
-  padding: var(--espacamento);
-  color: white;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  justify-content: center;
-  align-items: center;
-}
+  .main-img{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .secao-cards{
+    background-color: var(--primary-color);
+    padding: var(--espacamento);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container-cards{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 10px;
+  }
+
+  .card-redes{
+    padding: 10px;
+    gap: 10px;
+    display: flex;
+    background-color: white;
+    border: 2px solid white;
+    height: 10px;
+  }
+
+  .card-redes{
+    justify-content: center;
+    align-items: center;
+    
+    gap: 5px;
+    height: 40px;
+  }
+
+  h3, p {
+    color: white;
+    text-align: center;
+  }
+
+  .img-redes{
+    width: 50%;
+  }
+  
+  /*DESAFIO
+  Estilizar o card igual e layout
+  Se ficar igual, pode criar os demais cards
+  
+    
+  
