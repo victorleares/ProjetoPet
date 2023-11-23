@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+
 :root {
   --primary-color: #ffc500;
   --secondary-color: #eaae00;
@@ -7,102 +10,195 @@
   --espacamento: 10px 50px 10px 50px;
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
 }
 
-  header{
-    background-color: var(--secondary-color);
-    padding: var(--espacamento);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center; 
-  }
+header {
+  background-color: var(--secondary-color);
+  padding: var(--espacamento);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  nav ul{
-    list-style: none;
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    align-items: center;  
-  }
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
 
-  nav ul li a{
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-  }
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
 
-  nav ul li a:hover{
-    text-decoration: underline;
-    color: var(--third-color-hover);
-  }
+nav ul li a:hover {
+  text-decoration: underline;
+  color: var(--third-color-hover);
+}
 
-  main{
-    background-color: var(--primary-color);
-    display: flex;
-    padding: var(--espacamento);
-  }
+main {
+  background-color: var(--primary-color);
+  display: flex;
+  padding: var(--espacamento);
+}
 
-  .main-descricao{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px;
-    color: white;
-  }
+.main-descricao {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  color: white;
+}
 
-  .main-descricao .botao1{
-    background-color: var(--third-color);
-    color: white;
-    padding: 12px;
-    border-radius: 8px;
-    text-decoration: none;
-  }
+.main-descricao .botao1 {
+  background-color: var(--third-color);
+  color: white;
+  padding: 12px;
+  border-radius: 8px;
+  text-decoration: none;
+}
 
-  .main-descricao .botao2{
-    color: white;
-    padding: 12px;
-    border-radius: 8px;
-    text-decoration: none;
-    border: 2px solid white;
-  } 
+.main-descricao .botao2 {
+  color: white;
+  padding: 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  border: 2px solid white;
+}
 
-  .container-botao{
-    display: flex;
-    gap: 20px;
-  }
+.container-botao {
+  display: flex;
+  gap: 20px;
+}
 
-  .main-img{
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.main-img {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  .secao-cards{
-    background-color: var(--primary-color);
-    padding: var(--espacamento);
-    color: white;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .container-cards{
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     gap: 10px;
-  }
+.secao-cards {
+  background-color: var(--primary-color);
+  padding: var(--espacamento);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
 
-  h3, p {
-    color: white;
-    text-align: center;
-  }
+.container-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+h3,
+p {
+  color: white;
+  text-align: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.card-redes {
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+
+  padding: 15px;
+  width: 100%;
+}
+
+.card-redes a img {
+  width: 30px;
+}
+
+.card-redes a img:hover {
+  scale: 1.2;
+}
+
+footer {
+  background-color: var(--dark-color);
+  display: flex;
+  padding: var(--espacamento);
+}
+
+.footer-col1 {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.links {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.links ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.links ul li a {
+  text-decoration: none;
+  color: white;
+}
+.links ul li a:hover {
+  color: var(--third-color-hover);
+}
+
+.footer-col2 {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  text-align: right;
+  color: white;
+
+  font-size: 18px;
+}
+
+.footer-col2 p{
+  text-align: right;
+} 
+.footer-redes {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+}
+
+.footer-redes a img {
+  width: 45px;
+}
+
+.footer-redes a img:hover {
+  scale: 1.2;
+}
